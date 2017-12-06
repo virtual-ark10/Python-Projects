@@ -1,51 +1,17 @@
 '''
 Created on Apr 2, 2017
 
-@author: Stan-Lee
+@author: Virtual-ark
 '''
-#import imapclient, pyzmail
+
 from getpass import getpass
 import sys
 import re
 import requests
 from bs4 import BeautifulSoup
 import webbrowser
-#import Hello.send_email
-"""
-email = 'pythonmaster2017@outlook.com'
 
-passwd = getpass()
 
-imapObj = imapclient.IMAPClient("imap-mail.outlook.com", ssl=True)
-
-imapObj.login(email, passwd)
-
-print("Login Successful!")
-
-imapObj.select_folder('INBOX',readonly=True)
-
-uids = imapObj.search('ALL')
-
-#while True:
-    
-rawMessages = imapObj.fetch(uids[-1:],['BODY[]'])
-    
-message = pyzmail.PyzMessage.factory(rawMessages[uids[-1]][b'BODY[]'])
-    
-   # print(message)
-    
-subject = message.get_subject()
-    
-print(subject)
-    
-body = message.text_part.get_payload().decode(message.text_part.charset)
-        
-cleanBody = re.findall(r"[\w']+", body)
-
-strBody = ' '.join(cleanBody).lower()
-
-print(strBody) """
-  
 def torrent(searchWord):
  
     url = 'https://thepiratebay.org/search/' + searchWord
