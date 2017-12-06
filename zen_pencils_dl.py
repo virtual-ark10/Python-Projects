@@ -1,7 +1,7 @@
 '''
 Created on Apr 6, 2017
 
-@author: Stan-Lee
+@author: Virtual-ark
 '''
 
 import requests
